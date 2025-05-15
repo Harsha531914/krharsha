@@ -1,40 +1,107 @@
-/* style.css */
+/* Reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcb05;
+}
+
+/* Main Section */
+main {
+  padding: 3rem 0;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
   }
-  
-  header {
-    background: #111;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
+
   nav a {
-    color: #ddd;
-    margin: 0 15px;
-    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0.7rem;
   }
-  
-  nav a:hover {
-    color: #0ef;
+
+  .intro h2 {
+    font-size: 1.5rem;
   }
-  
-  main {
-    padding: 40px;
+
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header, main, footer {
     text-align: center;
+    padding: 1.5rem 0;
   }
-  
-  footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
   }
-  
+}
