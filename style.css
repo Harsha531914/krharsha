@@ -1,0 +1,40 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #0ef;
+  }
+  
+  main {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
